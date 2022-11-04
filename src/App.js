@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.scss';
+import Hero from './components/Hero/Hero';
+import Rooms from './components/Rooms/Rooms';
+import Nav from './components/Nav/Nav';
+import Services from './components/Services/Services';
+import Spots from './components/Spots/Spots';
 
 function App() {
-  return (
+    return (
+        <>
+            <header>
+                <Nav />
+            </header>
 
-    <>
-      <header>
-        My header
-      </header>
-      <main>
-        This is the main
-      </main>
-      <footer>
-        here is the footer
-      </footer>
-    
-    
-    </>
-    
-  );
+            <main>
+                <Hero />
+                <Rooms />
+                <Services />
+                <Spots />
+            </main>
+
+            <footer>
+                here is the footer
+            </footer>
+        
+        
+        </>
+    );
 }
 
 export default App;

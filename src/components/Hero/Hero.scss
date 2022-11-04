@@ -1,0 +1,26 @@
+@import "../../variables";
+
+
+.hero {
+
+    margin-left: (-$body-padding);
+    margin-right: (-$body-padding);
+
+    height: 400px;
+    position: relative;
+    padding: $body-padding;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    &__img {
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+}
