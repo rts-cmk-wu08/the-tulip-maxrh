@@ -6,7 +6,7 @@ const GalleryItem = ({image}) => {
 
         <li className="fmasonry__item">
             <figure>
-                <img src={image.url} alt="" />
+                <img src={image.url} alt="" loading="lazy" />
             </figure>
 
         </li>

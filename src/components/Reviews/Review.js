@@ -11,7 +11,7 @@ const Review = ({review}) => {
                     <span><Rating review={review} key={review.id} /></span>
                 </div>
                 <div className="review-card__author">
-                    <img src={review.imageUrl} alt="" />
+                    <img src={review.imageUrl} alt="" loading="lazy" />
                     <h5>{review.name}</h5>
                     <p>{review.handle}</p>
                 </div>

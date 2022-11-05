@@ -1,12 +1,31 @@
 @import "../../variables";
 
-
-
 .services {
     .flist-col__item:nth-child(odd) {
         .flist-row {
             flex-direction: row-reverse;
         }
     }
+
+    .flist-col__item {
+        padding-top: 4rem;
+        border-top: 1px solid rgba($color: $secondary, $alpha: .15);
+
+     
+    }
 }
 
+.service-card {
+
+    &__img {
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba($color: #000000, $alpha: .15);
+
+        img {
+            object-fit: cover;
+            float: left;
+            transform: scale(1.025);
+        }
+    }
+}

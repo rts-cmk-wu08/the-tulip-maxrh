@@ -95,6 +95,7 @@ section {
 .flist-row {
 
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -123,9 +124,11 @@ section {
 .flist-col {
     list-style: none;
     padding: 0;
-
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 
     &__item {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 }
