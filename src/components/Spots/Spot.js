@@ -26,8 +26,8 @@ const Spot = ({spot}) => {
 
         <li className="flist-row__item">
             <div className="spot-card">
-                <span className="spotIcon"><SpotIcon /></span>
-                <h4>{spot.name}</h4>
+                <span className="spot-card__icon"><SpotIcon /></span>
+                <h4 className="spot-card__title">{spot.name}</h4>
                 <p>{spot.text}</p>
             </div>
         </li>
