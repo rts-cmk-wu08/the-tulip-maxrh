@@ -1,0 +1,15 @@
+@import "../../variables";
+
+
+
+.room-card {
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+
+    img {
+        border-radius: 5px;
+        object-fit: cover;
+        height: 250px;
+    }
+}

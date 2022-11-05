@@ -24,11 +24,13 @@ const Spot = ({spot}) => {
 
     return ( 
 
-        <>
-            
-            <SpotIcon />
-    
-        </>
+        <li className="flist-row__item">
+            <div className="spot-card">
+                <span className="spotIcon"><SpotIcon /></span>
+                <h4>{spot.name}</h4>
+                <p>{spot.text}</p>
+            </div>
+        </li>
              
     );
     

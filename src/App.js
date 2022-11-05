@@ -4,6 +4,7 @@ import Rooms from './components/Rooms/Rooms';
 import Nav from './components/Nav/Nav';
 import Services from './components/Services/Services';
 import Spots from './components/Spots/Spots';
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
     return (
@@ -12,11 +13,12 @@ function App() {
                 <Nav />
             </header>
 
-            <main>
+            <main className='container'>
                 <Hero />
                 <Rooms />
                 <Services />
                 <Spots />
+                <Gallery />
             </main>
 
             <footer>

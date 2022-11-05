@@ -18,18 +18,89 @@ code {
       monospace;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+
 img { 
     width: 100%;
 }
 
-section {
+.container {
     max-width: 1120px;
-    margin: 0 auto 6rem;
+    margin: 0 auto;
 }
 
+section {
+    margin-bottom: 6rem;
+}
 
 .alignfull {
     width: 100vw;
 	max-width: 100vw;
 	margin-left: calc(50% - 50vw);
+}
+
+
+.flist-row {
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 (-$col-gap-size);
+
+    &__item {
+        margin: 0 $col-gap-size;
+        flex: 1 0 auto;
+    }
+
+}
+
+.flex-col-2 > .flist-row__item {
+    width: calc(50% - $col-gap-size * 2);
+}
+
+.flex-col-3 > .flist-row__item {
+    width: calc(33% - $col-gap-size * 2);
+}
+
+.flex-col-4 > .flist-row__item {
+    width: calc(25% - $col-gap-size * 2);
+}
+
+
+.flist-col {
+    list-style: none;
+    padding: 0;
+
+
+    &__item {
+        margin-bottom: 2rem;
+    }
 }

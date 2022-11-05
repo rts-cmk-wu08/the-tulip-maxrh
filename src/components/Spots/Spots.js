@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Spot from "./Spot";
+import "./Spots.scss";
 
 const Spots = () => {
 
@@ -31,7 +32,7 @@ const Spots = () => {
                     <header className="sHeader">
                      
                     </header>
-                    <ul className="flist-row">
+                    <ul className="flist-row flex-col-4">
                         {spots.map(spot => ( 
                             <Spot spot={spot} key={spot.id} />
                         ))}

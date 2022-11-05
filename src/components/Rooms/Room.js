@@ -3,7 +3,7 @@ const Room = ({room}) => {
     return ( 
 
         <li className="flist-row__item">
-            <article className="article-teaser">
+            <article className="room-card">
                 <img src={room.image} alt=""/>
                 <h4>{room.type}</h4>
                 <span>{room.price}</span>

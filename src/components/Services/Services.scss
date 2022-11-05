@@ -1,0 +1,12 @@
+@import "../../variables";
+
+
+
+.services {
+    .flist-col__item:nth-child(odd) {
+        .flist-row {
+            flex-direction: row-reverse;
+        }
+    }
+}
+

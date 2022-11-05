@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Service from "./Service";
+import "./Services.scss";
 
 
 const Services = () => {
@@ -17,7 +18,7 @@ const Services = () => {
         .finally(() => setLoading(false))
 
     }, []);
-
+    
     return ( 
         <section className="section services">
 
@@ -29,7 +30,7 @@ const Services = () => {
                         <h1 className="sHeader__title">{services.headline}</h1>
                         <p className="sHeader__desc">{services.text}</p>
                     </header>
-                    <ul className="flist-row">
+                    <ul className="flist-col">
                         {services.facilities.map(service => ( 
                             <Service service={service} key={service.id} />
                         ))}
