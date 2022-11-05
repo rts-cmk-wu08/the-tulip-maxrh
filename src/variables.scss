@@ -73,7 +73,7 @@ $headings-margin-bottom:      calc($spacer / 1) !default;
 $headings-font-family:        'Merriweather', serif !default;
 $headings-font-weight:        900 !default;
 $headings-line-height:        $line-height-sm !default;
-$headings-color:              inherit !default;
+$headings-color:              $secondary !default;
 
 
 /* Grid gutter */

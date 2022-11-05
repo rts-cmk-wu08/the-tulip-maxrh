@@ -30,22 +30,14 @@ const Hero = () => {
                 <>
 
                 <img className="hero__img" src={hero.image} alt="" />
-
                 <div className="container">
 
                     <div className="hero__content">
                         <img className="hero__logo" src={logo} alt="" />
                         <h1 className="hero__title">
-                            <SplitText LineWrapper={({ children }) => (
-                                <span className="wrapper">
-                                    {children}
-                                </span>
-                                )} >
-
-                                {hero.headline}
-
-                            </SplitText>
+                            {hero.headline} <br/> <span>{hero.headline2}</span>
                         </h1>
+                        <button className="btn btn-primary">Book Now</button>
                     </div> 
 
                     <div className="hero__form">

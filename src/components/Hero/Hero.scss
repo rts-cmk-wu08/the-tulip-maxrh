@@ -13,21 +13,15 @@
 
     &__title {
         font-size: 4rem;
-        font-weight: 400;
+        font-weight: 900;
         word-break: break-all;
         text-shadow: 0 5px 10px rgba($color: #000000, $alpha: .5);
+        margin-bottom: 4rem;
+        color: $white;
         
-        .wrapper:nth-child(1) > span:nth-child(4) {
-            text-transform: uppercase;
-
-            &:after {
-                 content: "\a";
-                 white-space: pre;
-             }
-        }
-
-        .wrapper:nth-child(1) > span:nth-child(-n+4) {
-            font-weight: 900;
+        span {
+            font-weight: 400;
+            font-size: 3rem;
         }
     }
 
@@ -58,6 +52,4 @@
         justify-content: flex-end;
         height: 100%;
     }
-
-  
 }

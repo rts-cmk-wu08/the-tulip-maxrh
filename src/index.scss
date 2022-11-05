@@ -7,6 +7,7 @@
 body {
     margin: 0 $body-margin;
     font: 100% $font-base;
+    font-size: $font-size-base;
     color: $body-color;
     line-height: $line-height-base;
     position: relative;
@@ -78,6 +79,18 @@ section {
 	margin-left: calc(50% - 50vw);
 }
 
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: none;
+    font-size: $font-size-base;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: $primary;
+    color: $white;
+}
 
 .flist-row {
 

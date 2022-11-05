@@ -9,7 +9,7 @@ const Form = () => {
             <input className="form__field" type="text" name="checkOut" placeholder="Check Out" />
             <input className="form__field" type="number" name="adults" placeholder="Adults" />
             <input className="form__field" type="number" name="children" placeholder="Children" />
-            <input className="form__field button" type="submit" value="Book Now" />
+            <input className="form__field btn btn-primary" type="submit" value="Book Now" />
 
         </form>
      );
