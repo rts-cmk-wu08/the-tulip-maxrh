@@ -5,6 +5,7 @@ import Nav from './components/Nav/Nav';
 import Services from './components/Services/Services';
 import Spots from './components/Spots/Spots';
 import Gallery from './components/Gallery/Gallery';
+import Reviews from './components/Reviews/Reviews';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Services />
                 <Spots />
                 <Gallery />
+                <Reviews />
             </main>
 
             <footer>

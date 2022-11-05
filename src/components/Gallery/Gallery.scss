@@ -3,7 +3,7 @@
 
 .fmasonry {
     display: grid;
-    grid-gap: 24px;
+    grid-gap: $col-gap-size;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 20vw;
     list-style: none;
