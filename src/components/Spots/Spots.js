@@ -10,10 +10,14 @@ const Spots = () => {
 
 
     useEffect(() => {
+       
+
         axios(`http://localhost:4000/spots`)
         .then(response => setSpots(response.data))
         .catch(() => setError("Something went wrong"))
         .finally(() => setLoading(false))
+
+   
 
     }, []);
 

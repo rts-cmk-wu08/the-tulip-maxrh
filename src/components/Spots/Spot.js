@@ -1,30 +1,37 @@
 import { IoRestaurantOutline, IoCarOutline, IoHeartOutline, IoWifiOutline, IoTennisballOutline, IoBeerOutline, IoStarOutline, IoGameControllerOutline } from "react-icons/io5";
 
 
+const components = {
+    IoRestaurantOutline,
+    IoCarOutline,
+    IoHeartOutline,
+    IoWifiOutline, 
+    IoTennisballOutline,
+    IoBeerOutline,
+    IoStarOutline,
+    IoGameControllerOutline,
+}
+
 const Spot = ({spot}) => {
     
-    const TagName = spot.icon
+    const SpotIcon = components[spot.icon]
 
+    if (!SpotIcon) {
 
+        return ( <><p>loading..</p></> );
+
+    } 
 
     return ( 
 
-        console.log(TagName)
-
-        
-
-        // <li className="flist-row__item">
-        //     <article className="article-teaser">
-        //         <img src={spot.icon} alt=""/>
-        //         <h4>{spot.name}</h4>
-        //         <p>{spot.text}</p>
-
-        //     </article>
+        <>
             
-        // </li>
-         
-     );
-
+            <SpotIcon />
+    
+        </>
+             
+    );
+    
 }
  
 export default Spot;
