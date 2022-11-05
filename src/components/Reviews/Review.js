@@ -1,8 +1,6 @@
 import Rating from "./Rating";
 
-
 const Review = ({review}) => {
-    
 
     return ( 
 
@@ -17,9 +15,7 @@ const Review = ({review}) => {
                     <h5>{review.name}</h5>
                     <p>{review.handle}</p>
                 </div>
-
             </div>
-
         </li>
              
     );

@@ -1,5 +1,13 @@
 @import "variables";
 
+.page-header  {
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+
 .sHeader {
     text-align: center;
     margin-bottom: 4rem;

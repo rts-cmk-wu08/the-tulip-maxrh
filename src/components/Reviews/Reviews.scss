@@ -5,14 +5,13 @@
     text-align: center;
 
     &__author {
-
         img {
             max-width: 60px;
         }
     }
 
     &__box {
-        padding: $col-gap-size;
+        padding: $grid-gutter-width;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba($color: #000000, $alpha: .2);
         margin-bottom: 3rem;

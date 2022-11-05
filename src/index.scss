@@ -5,10 +5,12 @@
 }
 
 body {
-    margin: 0;
-    padding: $body-padding;
-    font: 100% $font-stack;
-    color: $primary-color;
+    margin: 0 $body-margin;
+    font: 100% $font-base;
+    color: $body-color;
+    line-height: $line-height-base;
+    position: relative;
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -19,6 +21,8 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: $headings-color;
+    line-height: $headings-line-height;
     margin: 0 0 1rem;
 }
 
@@ -46,10 +50,13 @@ h5 {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     margin: 0 0 1rem;
 }
-
 
 img { 
     width: 100%;
@@ -57,6 +64,7 @@ img {
 
 .container {
     max-width: 1120px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -77,25 +85,25 @@ section {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0 (-$col-gap-size);
+    margin: 0 (-$grid-gutter-width);
 
     &__item {
-        margin: 0 $col-gap-size;
+        margin: 0 $grid-gutter-width;
         flex: 1 0 auto;
     }
 
 }
 
 .flex-col-2 > .flist-row__item {
-    width: calc(50% - $col-gap-size * 2);
+    width: calc(50% - $grid-gutter-width * 2);
 }
 
 .flex-col-3 > .flist-row__item {
-    width: calc(33% - $col-gap-size * 2);
+    width: calc(33% - $grid-gutter-width * 2);
 }
 
 .flex-col-4 > .flist-row__item {
-    width: calc(25% - $col-gap-size * 2);
+    width: calc(25% - $grid-gutter-width * 2);
 }
 
 

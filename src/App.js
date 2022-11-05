@@ -10,11 +10,11 @@ import Reviews from './components/Reviews/Reviews';
 function App() {
     return (
         <>
-            <header>
+            <header className='page-header'>
                 <Nav />
             </header>
 
-            <main className='container'>
+            <main className='page-content container'>
                 <Hero />
                 <Rooms />
                 <Services />
@@ -23,7 +23,7 @@ function App() {
                 <Reviews />
             </main>
 
-            <footer>
+            <footer className='page-footer'>
                 here is the footer
             </footer>
         
