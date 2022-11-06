@@ -5,6 +5,7 @@
     height: 100vh;
     position: relative;
     color: $white;
+    overflow: hidden;
 
     &__logo {
         max-width: 320px;
@@ -31,7 +32,7 @@
         top:0;
         left:0;
         height: calc(100% - 110px);
-        width: 100%;
+        width: 100vw;
         z-index: -1;
         object-fit: cover;
         object-position: center;

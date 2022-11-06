@@ -10,7 +10,7 @@ const Service = ({service}) => {
                 </div>
                 
                 <div className="service-card__text flist-row__item">
-                    <h2>{service.name}</h2>
+                    <h2 className="service-card__title">{service.name}</h2>
                     <p>{service.text1}</p>
                     <p>{service.text2}</p>
                 </div>

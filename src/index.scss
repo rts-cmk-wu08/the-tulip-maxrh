@@ -11,6 +11,7 @@ body {
     color: $body-color;
     line-height: $line-height-base;
     position: relative;
+    overflow-x: hidden;
     
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -61,6 +62,11 @@ p {
 
 img { 
     width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
