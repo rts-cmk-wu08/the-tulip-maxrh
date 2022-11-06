@@ -8,7 +8,7 @@ const Review = ({review}) => {
             <div className="review-card">
                 <div className="review-card__box">
                     <p>{review.text}</p>
-                    <span><Rating review={review} key={review.id} /></span>
+                    <Rating review={review} key={review.id} />
                 </div>
                 <div className="review-card__author">
                     <img src={review.imageUrl} alt="" loading="lazy" />

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { SplitText } from "@cyriacbr/react-split-text";
 import GalleryItem from "./GalleryItem";
 import "./Gallery.scss";
 
@@ -27,7 +28,16 @@ const Gallery = () => {
             {gallery &&  (
                 <>  
                     <header className="sHeader">
-                        <h1 className="sHeader__title">{gallery.headline}</h1>
+                        <h1 className="sHeader__title">
+                            <SplitText WordWrapper={({ children }) => (
+                                <span className="wrapper"> 
+                                    {children}
+                                </span>
+                                )}>
+                                {gallery.headline}
+                            </SplitText>
+                        </h1>
+
                         <p className="sHeader__desc">{gallery.text}</p>
                     </header>
                     <ul className="fmasonry">

@@ -6,7 +6,7 @@ const Service = ({service}) => {
             <div className="service-card flist-row flex-col-2">
                 
                 <div className="service-card__img flist-row__item">
-                    <img src={service.image} alt="" loading="lazy"/>
+                    <img src={service.image} alt="" />
                 </div>
                 
                 <div className="service-card__text flist-row__item">

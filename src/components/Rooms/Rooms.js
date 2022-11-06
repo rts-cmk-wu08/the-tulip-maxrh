@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { SplitText } from "@cyriacbr/react-split-text";
 import Room from "./Room";
 import "./Rooms.scss";
 
@@ -27,7 +28,15 @@ const Rooms = () => {
             {rooms &&  (
                 <>  
                     <header className="sHeader">
-                        <h1 className="sHeader__title">{rooms.headline}</h1>
+                        <h1 className="sHeader__title">
+                            <SplitText WordWrapper={({ children }) => (
+                                <span className="wrapper"> 
+                                    {children}
+                                </span>
+                                )}>
+                                {rooms.headline}
+                            </SplitText>
+                        </h1>
                         <p className="sHeader__desc">{rooms.text}</p>
                     </header>
                     <ul className="flist-row flex-col-3">

@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { SplitText } from "@cyriacbr/react-split-text";
 import Service from "./Service";
 import "./Services.scss";
-
 
 const Services = () => {
 
@@ -27,7 +27,17 @@ const Services = () => {
             {services &&  (
                 <>  
                     <header className="sHeader">
-                        <h1 className="sHeader__title">{services.headline}</h1>
+                        <h1 className="sHeader__title">
+                     
+                            <SplitText WordWrapper={({ children }) => (
+                                <span className="wrapper"> 
+                                    {children}
+                                </span>
+                                )}>
+                                {services.headline}
+                            </SplitText>
+                           
+                        </h1>
                         <p className="sHeader__desc">{services.text}</p>
                     </header>
                     <ul className="flist-col">
