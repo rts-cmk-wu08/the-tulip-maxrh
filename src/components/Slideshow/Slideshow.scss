@@ -5,33 +5,51 @@
         .each-slide img {
             object-fit: cover;
             object-position: center;
-            height: 500px;
+            height: calc(400px + 15vw);
             float: left;
         }
 
         &__arrow {
-            width: 50px;
-            height: 50px;
+            width: 20%;
+            height: 100%;
             border-radius: 100px;
             background: none;
             border: 0px;
-            font-size: 200%;
-            color: $body-color;
-            background: rgba($color: $white, $alpha: .9);
-
-            top: $body-margin / 2;
+            font-size: 500%;
+            color: $white;
+            opacity: .75;
           
             display: flex;
             justify-content: center;
             align-items: center;
 
-            &:last-of-type {
-                right: $body-margin / 2 !important;
-            }
+            transition: opacity ease .2s;
 
-            &:first-of-type {
-                right: calc( 60px + $body-margin / 2 ) !important;
-                left: auto !important;
+            &:hover {
+                opacity: 1;
+                transition: opacity ease .2s;
             }
         }
 }
+
+
+.indicators {
+    margin-top: 2rem !important;
+
+    .indicator {
+        cursor: pointer;
+        padding: 6px;
+        text-align: center;
+        border: 1px solid rgba($color: $secondary, $alpha: .35);
+        margin: 0 5px;
+        border-radius: 100px;
+        transition: background-color ease .5s;
+
+        &:hover,
+        &.active {  
+            background-color: rgba($color: $secondary, $alpha: .1);
+            transition: background-color ease .5s;
+        }
+    }
+}
+

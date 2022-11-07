@@ -1,14 +1,17 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { IoArrowForwardOutline, IoArrowBackOutline  } from "react-icons/io5";
+import { IoChevronForwardOutline, IoChevronBackOutline  } from "react-icons/io5";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import "./Slideshow.scss";
 
 const properties = {
-    prevArrow: <button className="slideshow__arrow"><IoArrowBackOutline /></button>,
-    nextArrow: <button className="slideshow__arrow"><IoArrowForwardOutline /></button>
+    prevArrow: <button className="slideshow__arrow"><IoChevronBackOutline /></button>,
+    nextArrow: <button className="slideshow__arrow"><IoChevronForwardOutline /></button>
 }
+
+const indicators = () => ( <span className="indicator"></span> );
+
 
 const Slideshow = () => {
 
@@ -25,13 +28,13 @@ const Slideshow = () => {
     }, []);
     
     return ( 
-        <section className="section slideshow">
+        <section className="section slideshow alignfull">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}
             {slideshow &&  (
                 <div className="slide-container">  
-                    <Slide {...properties}>
+                    <Slide indicators={indicators} {...properties}>
                         {slideshow.facilities.map(slideImage => (
                             <div className="each-slide" key={slideImage.id}>
                                 <img src={slideImage.image} alt="" />
