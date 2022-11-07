@@ -9,6 +9,8 @@
     overflow: hidden;
     margin-bottom: 4rem;
 
+   
+
     &__logo {
         max-width: 220px;
         margin-bottom: 2.5rem;
@@ -33,27 +35,30 @@
         position: absolute;
         top:0;
         left:0;
-        height: calc(100% - 110px);
+        height: calc(100% - 120px);
         width: 100vw;
         z-index: -1;
         object-fit: cover;
         object-position: center;
     }
 
-    &__content {
-        margin-bottom: 5rem;
-    }
-
     &__form {
         height: 120px;
-        margin: 40px 0;
+        margin: 0 0 $body-margin;
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - $body-margin);
     }
 
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        padding-top: 120px;
-        height: 100%;
+        justify-content: center;
+        margin-top: 150px;
+        padding-bottom: calc(120px + $body-margin * 2);
+        height: calc(100% - 150px);
+        position: relative;
     }
+
+    
 }

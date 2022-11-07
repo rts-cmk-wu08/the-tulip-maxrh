@@ -34,7 +34,7 @@ const Slideshow = () => {
             {error && <p>{error}</p>}
             {slideshow &&  (
                 <div className="slide-container">  
-                    <Slide indicators={indicators} {...properties}>
+                    <Slide indicators={indicators} {...properties} transitionDuration={700} easing={"ease-out"}>
                         {slideshow.facilities.map(slideImage => (
                             <div className="each-slide" key={slideImage.id}>
                                 <img src={slideImage.image} alt="" />
