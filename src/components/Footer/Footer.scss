@@ -1,0 +1,44 @@
+@import "../../variables";
+
+.page-footer {
+    background: $footer-bg;
+    color: $white;
+}
+
+
+.footer {
+    padding: $body-margin * 2 0 $body-margin * 3;
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+
+    &__logo {
+        max-width: 170px;
+        margin-bottom: .75rem;
+        margin-left: -.5rem;
+    }
+
+    .nav__social {
+        margin: 1.5rem 0 2rem;
+    }
+
+    .form__field {
+        background: rgba($color: $white, $alpha: .2);
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}
+
+.nav-footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}

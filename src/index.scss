@@ -5,9 +5,10 @@
 }
 
 body {
-    margin: 0 $body-margin;
-    font: 100% $font-base;
+    margin: 0;
+    font-family: $font-base;
     font-size: $font-size-base;
+    font-weight: $font-weight-base;
     color: $body-color;
     line-height: $line-height-base;
     position: relative;
@@ -73,6 +74,7 @@ figure {
     max-width: 1120px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 $body-margin;
 }
 
 section {
@@ -101,7 +103,6 @@ section {
 .flist-row {
 
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -135,6 +136,6 @@ section {
     flex-direction: column;
 
     &__item {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 }

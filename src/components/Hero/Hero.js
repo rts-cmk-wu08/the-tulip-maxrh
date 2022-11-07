@@ -29,11 +29,11 @@ const Hero = () => {
 
                 <>
 
-                <img className="hero__img" src={hero.image} alt="" loading="lazy" />
+                <img className="hero__img" src={hero.image} alt="" />
                 <div className="container">
 
                     <div className="hero__content">
-                        <img className="hero__logo" src={logo} alt="" loading="lazy" />
+                        <img className="hero__logo" src={logo} alt="" />
                         <h1 className="hero__title">
                             {hero.headline} <br/> <span>{hero.headline2}</span>
                         </h1>

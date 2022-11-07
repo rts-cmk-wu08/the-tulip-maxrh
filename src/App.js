@@ -6,6 +6,7 @@ import Services from './components/Services/Services';
 import Spots from './components/Spots/Spots';
 import Gallery from './components/Gallery/Gallery';
 import Reviews from './components/Reviews/Reviews';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -24,7 +25,7 @@ function App() {
             </main>
 
             <footer className='page-footer'>
-                here is the footer
+                <Footer />
             </footer>
         
         
