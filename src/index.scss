@@ -55,6 +55,12 @@ h5 {
 a {
     color: $primary;
     text-decoration: none;
+    transition: color ease-in-out .2s, opacity ease-in-out .2s;
+    
+    &:focus,
+    &:hover {
+        transition: color ease-in-out .2s, opacity ease-in-out .2s;
+    }
 }
 
 p {
