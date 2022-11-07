@@ -18,7 +18,7 @@ const Spot = ({spot}) => {
 
     if (!SpotIcon) {
 
-        return ( <><p>loading..</p></> );
+        return ( <p>...</p> );
 
     } 
 
