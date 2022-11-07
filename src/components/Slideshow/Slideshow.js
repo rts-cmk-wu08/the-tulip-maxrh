@@ -34,7 +34,7 @@ const Slideshow = () => {
                     <Slide {...properties}>
                         {slideshow.facilities.map(slideImage => (
                             <div className="each-slide" key={slideImage.id}>
-                                <img src={slideImage.image} />
+                                <img src={slideImage.image} alt="" />
                             </div>
                         ))} 
                     </Slide>
