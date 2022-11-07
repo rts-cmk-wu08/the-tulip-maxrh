@@ -1,3 +1,6 @@
+import { IoBedOutline, IoScanOutline  } from "react-icons/io5";
+
+
 const Room = ({room}) => {
 
     return ( 
@@ -7,6 +10,11 @@ const Room = ({room}) => {
                 <figure>
                     <img src={room.image} alt="" className="room-card__img" />
                     <span className="room-card__price">${room.price}</span>
+                    <div className="room-card__info">
+                        <span><IoBedOutline /> {room.guests} Guests</span>
+                        <span><IoScanOutline /> {room.size}</span>
+                    </div>
+                    
                 </figure>
                 <h4 className="room-card__title">{room.type}</h4>
                 

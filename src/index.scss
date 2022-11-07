@@ -71,7 +71,7 @@ figure {
 }
 
 .container {
-    max-width: 1120px;
+    max-width: calc( 1120px + $body-margin );
     width: 100%;
     margin: 0 auto;
     padding: 0 $body-margin;
