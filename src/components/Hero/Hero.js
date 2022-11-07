@@ -1,9 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { SplitText } from '@cyriacbr/react-split-text';
-import "./Hero.scss";
 import logo from "../../thetuliplogo.svg";
 import Form from "../Form/Form";
+import "./Hero.scss";
 
 const Hero = () => {
 

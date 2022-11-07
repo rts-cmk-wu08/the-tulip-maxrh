@@ -58,4 +58,14 @@
         }
     }
 
+    &__link {
+        display: flex;
+        align-items: center;
+        float: right;
+
+        > svg {
+            margin-left: .5rem;
+        }
+    }
+
 }

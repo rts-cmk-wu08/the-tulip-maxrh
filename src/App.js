@@ -7,10 +7,12 @@ import Spots from './components/Spots/Spots';
 import Gallery from './components/Gallery/Gallery';
 import Reviews from './components/Reviews/Reviews';
 import Footer from './components/Footer/Footer';
+import Slideshow from './components/Slideshow/Slideshow';
 
 function App() {
     return (
         <>
+        
             <header className='page-header'>
                 <Nav />
             </header>
@@ -20,6 +22,7 @@ function App() {
                 <Rooms />
                 <Services />
                 <Spots />
+                <Slideshow />
                 <Gallery />
                 <Reviews />
             </main>
@@ -27,7 +30,6 @@ function App() {
             <footer className='page-footer'>
                 <Footer />
             </footer>
-        
         
         </>
     );

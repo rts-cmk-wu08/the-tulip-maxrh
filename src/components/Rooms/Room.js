@@ -1,5 +1,4 @@
-import { IoBedOutline, IoScanOutline  } from "react-icons/io5";
-
+import { IoBedOutline, IoScanOutline, IoArrowForwardOutline  } from "react-icons/io5";
 
 const Room = ({room}) => {
 
@@ -19,6 +18,8 @@ const Room = ({room}) => {
                 <h4 className="room-card__title">{room.type}</h4>
                 
                 <p className="room-card__desc">{room.description}</p>
+
+                <a href="/" className="room-card__link">Booking <IoArrowForwardOutline /></a>
             </article>
             
         </li>

@@ -1,4 +1,4 @@
-import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube, IoLogoTwitter } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoFacebook, IoLogoYoutube, IoLogoTwitter, IoMailOutline, IoPhonePortraitOutline, IoLocationOutline } from "react-icons/io5";
 import logo from "../../thetuliplogo.svg";
 import "./Footer.scss";
 
@@ -36,9 +36,9 @@ const Footer = () => {
                 <div className="flist-row__item">
                     <h4>Reach Us</h4>
                     <ul className="nav-footer">
-                        <li>mail@hotel.us</li>
-                        <li>(239) 555-0108</li>
-                        <li>6391 Elgin St. Celina, <br/>Delaware 10299</li>
+                        <li className="nav-footer__icon"><IoMailOutline /> mail@hotel.us</li>
+                        <li className="nav-footer__icon"><IoPhonePortraitOutline /> (239) 555-0108</li>
+                        <li className="nav-footer__icon"><IoLocationOutline /> 6391 Elgin St. Celina, <br/>Delaware 10299</li>
                     </ul>
                 </div>
             </div>
