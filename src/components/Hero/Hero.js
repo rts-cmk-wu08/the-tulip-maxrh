@@ -20,7 +20,7 @@ const Hero = () => {
     }, []);
 
     return ( 
-        <section className="section hero alignfull">
+        <section className="hero alignfull">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

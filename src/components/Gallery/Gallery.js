@@ -21,7 +21,7 @@ const Gallery = () => {
     }, []);
     
     return ( 
-        <section className="section gallery">
+        <section className="gallery">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

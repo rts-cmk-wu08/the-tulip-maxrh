@@ -28,7 +28,7 @@ const Slideshow = () => {
     }, []);
     
     return ( 
-        <section className="section slideshow alignfull">
+        <section className="slideshow alignfull">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

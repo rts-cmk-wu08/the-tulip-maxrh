@@ -20,7 +20,7 @@ const Reviews = () => {
     }, []);
 
     return ( 
-        <section className="section reviews">
+        <section className="reviews">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

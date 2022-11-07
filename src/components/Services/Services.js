@@ -20,7 +20,7 @@ const Services = () => {
     }, []);
     
     return ( 
-        <section className="section services">
+        <section className="services">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

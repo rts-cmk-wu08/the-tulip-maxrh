@@ -21,7 +21,7 @@ const Rooms = () => {
     }, []);
 
     return ( 
-        <section className="section rooms">
+        <section className="rooms">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}

@@ -23,7 +23,7 @@ const Spots = () => {
     }, []);
 
     return ( 
-        <section className="section spots">
+        <section className="spots">
 
             {loading && <p>Loading</p>}
             {error && <p>{error}</p>}
