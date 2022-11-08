@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.slideshow {
+
+        .each-slide {
+
+            > span {
+                height: 100%;
+                width: 100%;
+            }
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: calc(400px + 15vw);
+                float: left;
+            }
+    
+        } 
+
+        &__arrow {
+            width: 20%;
+            height: 100%;
+            border-radius: 100px;
+            background: none;
+            border: 0px;
+            font-size: 500%;
+            color: $white;
+            opacity: .75;
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: opacity ease .2s;
+
+            &:hover {
+                opacity: 1;
+                transition: opacity ease .2s;
+            }
+        }
+}
+
+
+.indicators {
+    margin: 2rem 0 0 !important;
+    padding: 0;
+
+    .indicator {
+        cursor: pointer;
+        padding: 6px;
+        text-align: center;
+        border: 1px solid rgba($color: $secondary, $alpha: .35);
+        margin: 0 5px;
+        border-radius: 100px;
+        transition: background-color ease .5s;
+
+        &:hover,
+        &.active {  
+            background-color: rgba($color: $secondary, $alpha: .1);
+            transition: background-color ease .5s;
+        }
+    }
+}
+

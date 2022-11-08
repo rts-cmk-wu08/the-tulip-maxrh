@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.scss';
+import Hero from './components/Hero/Hero';
+import Rooms from './components/Rooms/Rooms';
+import Nav from './components/Nav/Nav';
+import Services from './components/Services/Services';
+import Spots from './components/Spots/Spots';
+import Gallery from './components/Gallery/Gallery';
+import Reviews from './components/Reviews/Reviews';
+import Footer from './components/Footer/Footer';
+import Slideshow from './components/Slideshow/Slideshow';
 
 function App() {
-  return (
+    return (
+        <>
+        
+            <header className='page-header'>
+                <Nav />
+            </header>
 
-    <>
-      <header>
-        My header
-      </header>
-      <main>
-        This is the main
-      </main>
-      <footer>
-        here is the footer
-      </footer>
-    
-    
-    </>
-    
-  );
+            <main className='page-content container'>
+                <Hero />
+                <Rooms />
+                <Services />
+                <Spots />
+                <Slideshow />
+                <Gallery />
+                <Reviews />
+            </main>
+
+            <footer className='page-footer'>
+                <Footer />
+            </footer>
+        
+        </>
+    );
 }
 
 export default App;

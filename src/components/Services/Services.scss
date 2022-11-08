@@ -1,0 +1,35 @@
+@import "../../variables";
+
+.services {
+    .flist-col__item:nth-child(odd) {
+        .flist-row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .flist-col__item {
+        padding-top: 3rem;
+        border-top: 1px solid rgba($color: $secondary, $alpha: .15);
+
+     
+    }
+}
+
+.service-card {
+    align-items: center;
+    
+    &__title {
+        font-weight: 500;
+    }
+
+    &__img {
+        overflow: hidden;
+        border-radius: 5px;
+
+        img {
+            object-fit: cover;
+            float: left;
+            transform: scale(1.025);
+        }
+    }
+}

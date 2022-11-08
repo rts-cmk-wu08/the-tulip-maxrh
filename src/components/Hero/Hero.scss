@@ -1,0 +1,65 @@
+@import "../../variables";
+
+
+.hero {
+    height: 100vh;
+    min-height: 780px;
+    position: relative;
+    color: $white;
+    overflow: hidden;
+    margin-bottom: 4rem;
+
+    &__logo {
+        max-width: 220px;
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 900;
+        word-break: break-all;
+        text-shadow: 0 5px 10px rgba($color: #000000, $alpha: .5);
+        margin-bottom: 3.5rem;
+        color: $white;
+        
+        span {
+            font-weight: 400;
+            font-size: 3rem;
+        }
+    }
+
+    > .lazy-load-image-background {
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    &__img {
+        transform: scale(1.025);
+        height: calc(100% - 120px);
+        width: 100vw;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &__form {
+        height: 120px;
+        margin: 0 0 $body-margin;
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - $body-margin * 2);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 150px;
+        padding-bottom: calc(120px + $body-margin * 2);
+        height: calc(100% - 150px);
+        position: relative;
+    }
+
+    
+}

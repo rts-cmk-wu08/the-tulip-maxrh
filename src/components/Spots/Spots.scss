@@ -1,0 +1,61 @@
+@import "../../variables";
+
+
+.spot-card {
+    padding: 25px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .1);
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    background:  $white;
+    border: 1px solid rgba($color: $secondary, $alpha: .5);
+
+    &__title {
+        color: $body-color;
+    }
+
+    &__icon {
+        border: 1px solid rgba($color: $secondary, $alpha: .25);
+
+        background-color: $white;
+        color: $secondary;
+        height: 50px;
+        width: 50px;
+        border-radius: 100px;
+        margin-bottom: 2rem;
+        
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        position: relative;
+        display: block;
+       
+
+        svg {
+            font-size: 1.5rem;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.flist-row__item:nth-child(1) .spot-card {
+    svg {
+        transform: translate(-47%, -52%);
+    }
+}
+
+.flist-row__item:nth-child(3) .spot-card {
+    svg {
+        transform: translate(-50%, -47%);
+    }
+}
+
+.flist-row__item:nth-child(7) .spot-card {
+    svg {
+        transform: translate(-50%, -54%);
+    }
+}
