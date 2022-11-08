@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const GalleryItem = ({image}) => {
 
 
@@ -6,7 +9,7 @@ const GalleryItem = ({image}) => {
 
         <li className="fmasonry__item">
             <figure>
-                <img src={image.url} alt="" loading="lazy" />
+                <LazyLoadImage effect="blur" src={image.url} alt="Image Alt" />
             </figure>
 
         </li>

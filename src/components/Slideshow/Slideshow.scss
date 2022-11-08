@@ -2,12 +2,21 @@
 
 .slideshow {
 
-        .each-slide img {
-            object-fit: cover;
-            object-position: center;
-            height: calc(400px + 15vw);
-            float: left;
-        }
+        .each-slide {
+
+            > span {
+                height: 100%;
+                width: 100%;
+            }
+
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: calc(400px + 15vw);
+                float: left;
+            }
+    
+        } 
 
         &__arrow {
             width: 20%;

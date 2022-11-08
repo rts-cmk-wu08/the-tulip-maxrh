@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import logo from "../../thetuliplogo.svg";
 import Form from "../Form/Form";
 import "./Hero.scss";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Hero = () => {
 
@@ -28,7 +30,8 @@ const Hero = () => {
 
                 <>
 
-                <img className="hero__img" src={hero.image} alt="" />
+                <LazyLoadImage className="hero__img" effect="blur" src={hero.image} alt="Image Alt" />
+
                 <div className="container">
 
                     <div className="hero__content">

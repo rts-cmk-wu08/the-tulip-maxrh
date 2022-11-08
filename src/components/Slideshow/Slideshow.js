@@ -4,6 +4,8 @@ import { IoChevronForwardOutline, IoChevronBackOutline  } from "react-icons/io5"
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import "./Slideshow.scss";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const properties = {
     prevArrow: <button className="slideshow__arrow"><IoChevronBackOutline /></button>,
@@ -37,7 +39,7 @@ const Slideshow = () => {
                     <Slide indicators={indicators} {...properties} transitionDuration={700} easing={"ease-out"}>
                         {slideshow.facilities.map(slideImage => (
                             <div className="each-slide" key={slideImage.id}>
-                                <img src={slideImage.image} alt="" />
+                                <LazyLoadImage effect="blur" src={slideImage.image} alt="Image Alt" />
                             </div>
                         ))} 
                     </Slide>

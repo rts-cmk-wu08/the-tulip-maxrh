@@ -1,4 +1,6 @@
 import Rating from "./Rating";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Review = ({review}) => {
 
@@ -11,7 +13,7 @@ const Review = ({review}) => {
                     <Rating review={review} key={review.id} />
                 </div>
                 <div className="review-card__author">
-                    <img src={review.imageUrl} alt="" loading="lazy" />
+                    <LazyLoadImage effect="blur" src={review.imageUrl} alt="Image Alt" />
                     <h5>{review.name}</h5>
                     <p>{review.handle}</p>
                 </div>

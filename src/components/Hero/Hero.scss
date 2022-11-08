@@ -9,8 +9,6 @@
     overflow: hidden;
     margin-bottom: 4rem;
 
-   
-
     &__logo {
         max-width: 220px;
         margin-bottom: 2.5rem;
@@ -30,11 +28,14 @@
         }
     }
 
-    &__img {
-        transform: scale(1.025);
+    > .lazy-load-image-background {
         position: absolute;
         top:0;
         left:0;
+    }
+
+    &__img {
+        transform: scale(1.025);
         height: calc(100% - 120px);
         width: 100vw;
         z-index: -1;

@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Service = ({service}) => {
 
     return ( 
@@ -6,7 +9,7 @@ const Service = ({service}) => {
             <div className="service-card flist-row flex-col-2">
                 
                 <div className="service-card__img flist-row__item">
-                    <img src={service.image} alt="" />
+                    <LazyLoadImage effect="blur" src={service.image} alt="Image Alt" />
                 </div>
                 
                 <div className="service-card__text flist-row__item">
